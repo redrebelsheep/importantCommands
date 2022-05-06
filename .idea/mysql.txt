@@ -1,0 +1,2 @@
+mysql -h 127.0.0.1 -u root -ppassword -e "create Database zoo"
+mysql -h 127.0.0.1 -u root -ppassword
