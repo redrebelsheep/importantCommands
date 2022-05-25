@@ -1,0 +1,31 @@
+docker info --> zeigt infos an 
+
+docker -v --> zeigt version 
+
+docker ps -> container anzeigen info nur laufende 
+
+docker ps  -a --> zeit ALLe Container an 
+
+docker start  --> startet container wieder 
+
+docker stop -> beendet den Container 
+
+docker rm -> löscht container 
+
+docker container prune löscht alle container die aus sind
+
+docker images 
+
+docker --help
+
+docker run -p8080:80 containername:tag
+
+docker run -d -p8080:80 containername:tag detach ohne console 
+
+curl -s --unix-socket /var/run/docker.sock http://localhost/info | jq -> socker 
+
+curl http://127.0.0.1:2375/info | jq
+
+
+Service on mac
+--launchctl 
