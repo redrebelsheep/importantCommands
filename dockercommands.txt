@@ -39,6 +39,12 @@ curl http://127.0.0.1:2375/info | jq
 
 docker exec -it 
 
+docker diff maschine layer 
+
+docker build 
+
+docker run --name awesomevolumecontainer --rm -d -p 8080:80 --mount type=bind,source=/Users/vw23fue/docker_bredex/,target=/usr/local/nginx/html,readonly awesomevolume:0.1
+
 
 Service on mac
 --launchctl 
