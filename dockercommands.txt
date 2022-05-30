@@ -18,14 +18,30 @@ docker images
 
 docker --help
 
-docker run -p8080:80 containername:tag
+docker run -p8080:80 imagename:tag
 
-docker run -d -p8080:80 containername:tag detach ohne console 
+docker run -d -p8080:80 containername:tag -> detach ohne console 
+
+docker run -d --rm -p8080:80 containername:tag -> detach ohne console und sofort löschen 
+docker run -d --rm --name peter -p8080:80 containername:tag -> detach ohne console und sofort löschen mit namen peter
+
+docker attach name -> verbinden auf detach maschine 
+
+docker stats -> statiken angucken Container
+
+docker cp /pfad/datei name:/pfad/datei
+
+docker logs -f name log die maschine auf der konsole
 
 curl -s --unix-socket /var/run/docker.sock http://localhost/info | jq -> socker 
 
 curl http://127.0.0.1:2375/info | jq
 
+docker exec -it 
+
 
 Service on mac
 --launchctl 
+
+--> Proxy für Vwm maybe
+http://host.docker.internal:9000
