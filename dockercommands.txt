@@ -52,6 +52,27 @@ Service on mac
 --> Proxy für Vwm maybe
 http://host.docker.internal:9000
 
+ docker volume ls --format "{{.Name}}: {{.Mountpoint}}"
+~/Library/Containers/com.docker.docker/Data/vms/0/
+
+docker buildx build --platform linux/amd64 -t <image> .
+
+docker run --platform linux/amd64 -d --rm -p 8080:80 danielnitschkevw/docker101_nginx:amd64_lates
+
+
+docker run -it --rm busybox
 
  docker image inspect
 
+docker network create awesomenetwork
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+
+per hand 
+docker network create awesomenetwork
+
+docker run --net awesomenetwork --name awesomemysql -e MYSQL_ROOT_PASSWORD=awesomepassword -e MYSQL_DATABASE=awesomedatabase -d mysql
+
+docker run --net awesomenetwork --name awesomewordpress -e WORDPRESS_DB_HOST=awesomemysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=awesomepassword -e WORDPRESS_DB_NAME=awesomedatabase -p 8080:80 -d wordpress
