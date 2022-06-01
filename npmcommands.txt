@@ -12,3 +12,5 @@ npm install react-router
 
 
 npx create-react-app name 
+
+npm install @mui/x-data-grid
