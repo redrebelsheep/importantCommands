@@ -14,3 +14,21 @@ npm install react-router
 npx create-react-app name 
 
 npm install @mui/x-data-grid
+
+npm install superagent
+
+// maybee
+npm i querystring-es3
+npm install node-polyfill-webpack-plugin
+
+
+webpack.config.js
+->
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
+
+module.exports = {
+	// Other rules...
+	plugins: [
+		new NodePolyfillPlugin()
+	]
+}
