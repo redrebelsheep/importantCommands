@@ -22,6 +22,9 @@ npm i querystring-es3
 npm install node-polyfill-webpack-plugin
 
 
+ npm install redux
+ npm install redux-thunk 
+
 webpack.config.js
 ->
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
