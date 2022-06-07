@@ -1,0 +1,12 @@
+az login
+az account list
+az account tenant list
+
+--powerhsell
+Connect-AzAccount
+Get-AzTenant
+
+
+az login --tenant <TenantID>
+
+mvn package -DskipTests azure-webapp:deploy

@@ -22,7 +22,7 @@ npm i querystring-es3
 npm install node-polyfill-webpack-plugin
 
 // json doc
-npm i jsdoc
+npm install --save-dev jsdoc
 
  npm install redux
  npm install redux-thunk 
