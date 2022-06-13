@@ -1,0 +1,5 @@
+brew services stop prometheus
+
+brew services list
+
+

@@ -1,0 +1,5 @@
+{job="varlogs"} |= "index method" | json | duration > 300
+sum(sum_over_time({job="varlogs"} |= "index method" |  json | duration > 300 | unwrap duration [30s]))
+loki --config.file=config/loki-local-config.yaml
+promtail --config.file=config/promtail-local-config.yaml
+brew services start grafana
