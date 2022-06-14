@@ -1,0 +1,11 @@
+HttpUrl route = HttpUrl.parse(host + "/users");
+Request request = new Request.Builder()
+.url(route)
+.put(RequestBodies.jsonObj(inputUser))
+.build();
+
+<dependency>
+    <groupId>com.squareup.okhttp3</groupId>
+    <artifactId>okhttp</artifactId>
+    <version>4.9.1</version>
+</dependency>
