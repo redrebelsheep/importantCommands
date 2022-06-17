@@ -1,0 +1,6 @@
+ Der Klassenname ist eine Kombination aus der zu testenden
+Klasse/Funktionalität und dem Wort "Test".
+ Der Testmethodenname ist eine Kombination aus dem Wort "test" und der zu
+testenden Funktionalität sein
+ Testmethoden werden immer mit einem Javadoc Kommentar beschrieben. In
+diesem wird die grundsätzliche Funktionalität des Tests beschrieben werden.
