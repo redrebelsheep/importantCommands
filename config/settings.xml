@@ -1,0 +1,31 @@
+<settings>
+<!-- localRepository
+| The path to the local repository maven will use to store artifacts.
+| Default: ~/.m2/repository
+| <localRepository>/path/to/local/repo</localRepository> -->
+
+<localRepository>/Users/d1ade4u/.m2</localRepository>
+<!-- offline
+| Determines whether maven should attempt to connect to the
+| network when executing a build.
+| This will have an effect on artifact downloads, artifact
+| deployment, and others.
+| Default: false -->
+
+<offline>false</offline>
+
+<proxies>
+<proxy>
+<id>optional</id>
+<active>true</active>
+<protocol>http</protocol>
+<username>d1ade4u</username>
+<password>elladuffy$manfred19</password>
+<host>127.0.0.1</host>
+<port>9000</port>
+<nonProxyHosts>localhost|127.0.0.1|.wob.vw.vwg|.vwgroup.com|*.vwg</nonProxyHosts>
+</proxy>
+</proxies>
+
+
+</settings>
